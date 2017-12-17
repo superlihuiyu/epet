@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*公共样式*/
+body{
+  background: #fff;
+  min-width: 320px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Microsoft Yahei',-apple-system-font,Helvetica Neue,sans-serif;
+}
+.indexbox{
+  overflow: hidden;
+}
+img{vertical-align: middle;}
+.ft{
+  font-size: 13px;
+}
+.f12{
+  font-size: 12px;
+}
+.c89{
+  color: #898989;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.bt{
+  color: red;
+}
+/*清除浮动*/
+.clearfix{
+  *zoom: 1;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}

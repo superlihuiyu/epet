@@ -1,0 +1,211 @@
+{
+	"id": "49007286-d291-da23-2ce1-18fb26c2298b",
+	"name": "实战",
+	"description": "",
+	"order": [
+		"a4af2c2f-ef9e-52ca-68db-dd3be27d3847",
+		"f02166cf-699f-8f5c-386b-a180471f754a",
+		"0910bc23-b53f-c4d3-457a-79e6f58de233"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1513389767007,
+	"owner": "3187889",
+	"public": false,
+	"requests": [
+		{
+			"id": "0910bc23-b53f-c4d3-457a-79e6f58de233",
+			"headers": "",
+			"headerData": [],
+			"url": "https://mallcdn.api.epet.com/v3/index/main.html?pet_type=fish&version=358&is_single=0&system=wap&isWeb=1&_=1513390356509",
+			"queryParams": [
+				{
+					"key": "pet_type",
+					"value": "fish",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "358",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "is_single",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "system",
+					"value": "wap",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isWeb",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "_",
+					"value": "1513390356509",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "49007286-d291-da23-2ce1-18fb26c2298b",
+			"data": null,
+			"dataMode": "params",
+			"name": "水族主页获取",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513390391368,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a4af2c2f-ef9e-52ca-68db-dd3be27d3847",
+			"headers": "",
+			"headerData": [],
+			"url": "https://mallcdn.api.epet.com/v3/index/main.html?pet_type=dog&version=358&is_single=0&system=wap&isWeb=1&_=1513390301942",
+			"queryParams": [
+				{
+					"key": "pet_type",
+					"value": "dog",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "358",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "is_single",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "system",
+					"value": "wap",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isWeb",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "_",
+					"value": "1513390301942",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513390335651,
+			"name": "猫猫主页获取",
+			"description": "",
+			"collectionId": "49007286-d291-da23-2ce1-18fb26c2298b",
+			"responses": []
+		},
+		{
+			"id": "f02166cf-699f-8f5c-386b-a180471f754a",
+			"headers": "",
+			"headerData": [],
+			"url": "https://mallcdn.api.epet.com/v3/index/main.html?pet_type=fish&version=358&is_single=0&system=wap&isWeb=1&_=1513390356509",
+			"queryParams": [
+				{
+					"key": "pet_type",
+					"value": "fish",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "358",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "is_single",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "system",
+					"value": "wap",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "isWeb",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "_",
+					"value": "1513390356509",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513390380121,
+			"name": "狗狗主页获取",
+			"description": "",
+			"collectionId": "49007286-d291-da23-2ce1-18fb26c2298b",
+			"responses": []
+		}
+	]
+}
