@@ -2,12 +2,16 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from '../App.vue'
 import app from '../components/app.vue'
-import classify from '../components/classify.vue'
-import shoppingcart from '../components/shoppingcart.vue'
-import mine from '../components/mine.vue'
+
+import classification from '../pages/classify/classification.vue'
+import brand from '../pages/classify/brand.vue'
+import goods from '../pages/classify/goods.vue'
+import shoppingcart from '../pages/shpping/shopping.vue'
+import mine from '../pages/mine.vue'
 Vue.use(Router)
 
 export default new Router({
+  linkActiveClass: 'active',
   routes: [
     {
       path: '/',
@@ -18,8 +22,18 @@ export default new Router({
       component: app
     },
     {
-      path: '/classify',
-      component: classify
+      path: '/classification',
+      component: classification,
+      children:[
+        {
+          path: '/classification/goods',
+          component: goods,
+        },
+        {
+          path: '/classification/brand',
+          component: brand,
+        },
+      ]
     },
     {
       path: '/shoppingcart',
@@ -27,7 +41,7 @@ export default new Router({
     },
     {
       path: '/mine',
-      component: mine
+      component: mine,
     }
 
   ]

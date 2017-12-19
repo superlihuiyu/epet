@@ -1,30 +1,37 @@
 <template>
   <div class="titmoudle">
     <div class="leftimg titclass">
-      <img src="https://img2.epetbar.com/nowater/2017-12/13/13/c07935b6d02b84cf457c3eaa40f95677.jpg">
+      <img :src="video_title.left.img.image">
     </div>
     <div class="more titclass fr">
-      <a href="https://wap.epet.com/main.html?menu_param=121&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-        <img src="https://img2.epetbar.com/nowater/2017-12/13/13/e37e5a0b4da02d65c3fbed58c8174e1d.jpg">
+      <a :href="video_content.share_target.param.url">
+        <img :src="video_title.right.img.image">
       </a>
     </div>
     <div class="video_img">
-      <img src="https://img1.epetbar.com/2017-12/13/13/bf5a66590af3b4c59f7bc0de38cb8060.jpg@!500w0h" >
-      <span class="cmallPlayIco"></span>
+      <a :href="video_content.share_target.param.url">
+        <img :src="video_content.share_target.param.image" >
+        <span class="cmallPlayIco"></span>
+      </a>
     </div>
     <div class="text ft12 c999 pad10 ftc">
-      <div class="textover">KIWI KITCHENS狗罐头 一罐装下93%鲜肉</div>
+      <div class="textover">{{video_content.title}}</div>
       <div class="textbottom">
         <span class="cmallViewIco"></span>
-        <i>15502</i>
+        <i>{{video_content.visit}}</i>
         <span>|</span>
-        02:15
+        {{video_content.video_size}}
       </div>
     </div>
   </div>
 </template>
 <script>
-  export default{}
+  export default{
+    props:{
+      video_title:Object,
+      video_content:Object
+    }
+  }
 
 </script>
 <style lang="stylus" rel="stylesheet/stylus">

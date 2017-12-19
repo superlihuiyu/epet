@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/store'
+import  './mock/Mockjs'
 Vue.config.productionTip = false
 
 import { Swipe, SwipeItem } from 'mint-ui';

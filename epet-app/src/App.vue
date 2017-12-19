@@ -1,34 +1,45 @@
 <template>
   <div>
-    <router-view></router-view>
+      <router-view></router-view>
     <div class="footer">
       <ul class="clearfix">
-        <li>
+        <li @click="changeColor">
           <router-link to="/app"><span class="shouye"></span></router-link>
         </li>
-        <li>
-          <router-link to="/classify"><span class="fenlei"></span></router-link>
+        <li @click="changeColor">
+          <router-link to="/classification" @click="changeColor"><span class="fenlei"></span></router-link>
         </li>
-        <li>
-          <router-link to="/shoppingcart"><span class="shop"></span></router-link>
+        <li @click="changeColor">
+          <router-link to="/shoppingcart" @click="changeColor"><span class="shop"></span></router-link>
         </li>
-        <li>
-          <router-link to="/mine"><span class="my"></span></router-link>
+        <li @click="changeColor">
+          <router-link to="/mine" @click="changeColor"><span class="my"></span></router-link>
         </li>
       </ul>
     </div>
   </div>
 </template>
 <script>
-import app_com from './components/app.vue'
 export default {
-    data (){
-      return{
-
+  data　(){
+    return{
+      x:0
+    }
+  },
+  mounted(){
+    this.$store.dispatch('getHome')
+  },
+  methods:{
+    changeColor (ev) {
+      ev=ev||event
+      var spanNodes=document.querySelectorAll('.footer>ul>li>a>span')
+      for (var i=0;i<spanNodes.length;i++){
+        spanNodes[i].style.backgroundPositionX='-85px'
       }
-    },
+      ev.target.style.backgroundPositionX='0'
+    }
+  },
   components:{
-    app_com
   }
 
 }
@@ -53,6 +64,7 @@ export default {
         text-align center
         a
           display inline-block
+          text-align center
           span
             display inline-block;
             margin-top: 2px;
@@ -61,13 +73,14 @@ export default {
             background url("./common/img/img.png") no-repeat
             background-size 560%
         .shouye
-          background-position 0px 0px
+          background-position-x 0
+          background-position-y 0
         .fenlei
-          background-position -82px -40px
+          background-position -85px -41px
         .shop
-          background-position -82px -82px
+          background-position -85px -81px
         .my
-          background-position -82px -124px
+          background-position -85px -122px
 
 
 

@@ -2,18 +2,21 @@
   <div class="banner_item">
     <div class="swiper-wrapper">
       <mt-swipe :auto="3000" class="mt-swipe">
-        <mt-swipe-item><img src="../common/img/c01.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="../common/img/c02.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="../common/img/c03.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="../common/img/c04.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="../common/img/c05.png" alt=""></mt-swipe-item>
+        <mt-swipe-item v-for="(imgMessage,index) in imgSrc">
+          <a :href="imgMessage.target.param">
+            <img :src="imgMessage.image" alt="">
+          </a>
+        </mt-swipe-item>
       </mt-swipe>
     </div>
   </div>
 </template>
 <script>
-
-  export default{}
+  export default{
+    props:{
+      imgSrc:Array
+    }
+  }
 
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
@@ -23,5 +26,5 @@
         width 100%
         height 160px
         img
-          height 160px
+          height 100%
 </style>

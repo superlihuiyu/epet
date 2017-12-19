@@ -24,64 +24,10 @@
     <div class="find-nav">
       <div class="find_nav_list " ref="menuWrapper">
         <ul class="dscroll-ul" style="width: 140%;">
-          <li data-type="0" data-shareid="1" class="dscroll-li on" style="width: 74.5px;">
+          <li v-for="(menu,index) in menus">
             <a href="https://wap.epet.com/main.html?menu_param=0&amp;pet_type=dog&amp;fw=0">
               <span class="rela">
-                <span>首页</span>
-                <i></i>
-              </span>
-            </a>
-          </li>
-          <li data-type="" data-shareid="0" class="dscroll-li" style="width: 74.5px;">
-            <a href="https://wap.epet.com/clothmall/main.html?pet_type=dog&amp;fw=0">
-              <!---->
-              <span class="rela">
-                <span>服饰城</span>
-                <i></i>
-              </span>
-            </a>
-          </li>
-          <li data-type="123" data-shareid="372" class="dscroll-li" style="width: 74.5px;">
-            <a href="https://wap.epet.com/main.html?menu_param=123&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-              <!---->
-              <span class="rela">
-                <span>狗狗主粮</span>
-                <i></i>
-              </span>
-            </a>
-          </li>
-          <li data-type="125" data-shareid="374" class="dscroll-li" style="width: 74.5px;">
-            <a href="https://wap.epet.com/main.html?menu_param=125&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-              <!---->
-              <span class="rela">
-                <span>医疗保健</span>
-                <i></i>
-              </span>
-            </a>
-          </li>
-          <li data-type="131" data-shareid="375" class="dscroll-li" style="width: 74.5px;">
-            <a href="https://wap.epet.com/main.html?menu_param=131&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-              <!---->
-              <span class="rela">
-                <span>零食玩具</span>
-                <i></i>
-              </span>
-            </a>
-          </li>
-          <li data-type="134" data-shareid="0" class="dscroll-li" style="width: 74.5px;">
-            <a href="https://wap.epet.com/main.html?menu_param=134&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-              <!---->
-              <span class="rela">
-                <span>日用外出</span>
-                <i></i>
-              </span>
-            </a>
-          </li>
-          <li data-type="140" data-shareid="371" class="dscroll-li" style="width: 74.5px;">
-            <a href="https://wap.epet.com/main.html?menu_param=140&amp;pet_type=dog&amp;is_single=1&amp;fw=0">
-              <!---->
-              <span class="rela">
-                <span>美容香波</span>
+                <span>{{menu.menu_name}}</span>
                 <i></i>
               </span>
             </a>
@@ -94,11 +40,17 @@
 <script>
   import BScroll from 'better-scroll'
   export default{
-
+    props:{
+      menus:Array
+    },
     mounted(){
-      new BScroll(this.$refs.menuWrapper, {
-        scrollX: true
+      this.$nextTick(()=>{
+        new BScroll(this.$refs.menuWrapper, {
+          scrollX: true,
+          click:true
+        })
       })
+
     }
   }
 </script>
@@ -181,6 +133,7 @@
   }
   .dscroll-ul li{
     text-align: center;
+    width: 74.5px;
   }
   .dscroll-ul li a{
     display: block;

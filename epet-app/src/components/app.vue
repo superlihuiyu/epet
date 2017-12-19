@@ -1,61 +1,15 @@
 <template>
   <div class="indexbox">
-    <header_com />
+    <header_com :menus="home.menus"/>
     <div class="main">
-      <banner_com/>
+      <banner_com :imgSrc="home.datas[0].value"/>
       <div class="columnnavdiv clearfix">
         <ul class="sale-list clearfix ">
-          <li>
-            <a href="#">
-              <img src="../common/img/1-1.jpg" alt="">
+          <li v-for="(img,index) in home.datas[1].menus">
+            <a :href="img.target.param">
+              <img :src="img.image" alt="">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/1-2.jpg"  alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/1-3.jpg"  alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/1-4.jpg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/1-5.jpg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/2-1.jpg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/2-2.jpg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/2-3.jpg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/2-4.jpg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../common/img/2-5.jpg" alt="">
-            </a>
-          </li>
-
         </ul>
       </div>
       <div class="surprise">
@@ -80,8 +34,8 @@
           </div>
         </div>
         <div class="surprise-pro">
-          <div class="swiper-container">
-            <div class="swiper-wrapper clearfix">
+          <div class="swiper-container" style="width: 100%" ref="goodsWrapper">
+            <div class="swiper-wrapper clearfix" style="width: 120%" >
               <div class="swiper-slide " style="width: 98.5714px; margin-right: 10px;">
                 <div class="pro-block"><a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
                   <div class="thispro-img loadimg-nofixed">
@@ -167,9 +121,9 @@
       </div>
       <pageline_com />
       <div class="show"></div>
-      <title_video_com />
+      <title_video_com :video_title="home.datas[9].value" :video_content="home.datas[10].value[0]"/>
       <pageline_com />
-      <title_list_com />
+      <title_list_com :listMessage="home.datas[12].value" :listImg="home.datas[13].content_images"/>
       <title_com />
       <div class="swiper-wrapper">
         <mt-swipe :auto="3000" class="mt-swipe">
@@ -179,10 +133,10 @@
           <mt-swipe-item><img src="../common/img/4.jpg" alt=""></mt-swipe-item>
         </mt-swipe>
       </div>
-      <title_video_com />
-      <title_video_com />
+      <title_video_com :video_title="home.datas[16].value" :video_content="home.datas[17].value[0]"/>
+      <title_video_com :video_title="home.datas[18].value" :video_content="home.datas[19].value[0]"/>
       <div class="divimg">
-        <img name="750x61" src="https://img2.epetbar.com/nowater/2017-12/13/11/be84f01e893b0e631d8512566eb79117.jpg@!water" lazy="loaded">
+        <img :src="home.datas[20].content_images.image">
       </div>
       <div class="footertext">
         <div class="ft">
@@ -203,7 +157,24 @@
   import title_video_com from './titile_video.vue'
   import title_list_com from './titile_list.vue'
   import title_com from './title.vue'
+  import BScroll from 'better-scroll'
+  import {mapState} from 'vuex'
   export default{
+
+    mounted(){
+      this.$nextTick(()=>{
+        new BScroll(this.$refs.goodsWrapper,{
+          scrollX:true,
+          click:true
+        })
+      })
+    },
+    computed: {
+      ...mapState(['home'])
+    },
+    methods:{
+
+    },
     components:{
       header_com,
       banner_com,
@@ -249,7 +220,6 @@
 
 
         .surprise-pro
-          height: 131px;
           padding-left: 5px;
           margin-bottom: 10px;
           .swiper-container
