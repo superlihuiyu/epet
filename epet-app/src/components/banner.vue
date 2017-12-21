@@ -2,9 +2,9 @@
   <div class="banner_item">
     <div class="swiper-wrapper">
       <mt-swipe :auto="3000" class="mt-swipe">
-        <mt-swipe-item v-for="(imgMessage,index) in imgSrc">
+        <mt-swipe-item v-for="(imgMessage,index) in imgSrc" :key="index">
           <a :href="imgMessage.target.param">
-            <img :src="imgMessage.image" alt="">
+            <img :src="imgMessage.image">
           </a>
         </mt-swipe-item>
       </mt-swipe>

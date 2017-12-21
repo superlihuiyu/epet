@@ -145,7 +145,7 @@
     color: #666;
   }
   .dscroll-ul li:nth-child(1) a{
-    color :green;
+    color: #e73f85;
   }
   .dscroll-ul li:nth-child(1) a i {
     position: relative;
@@ -153,6 +153,6 @@
     display: block;
     width: 35px;
     height: 2px;
-    background: green;
+    background: #e73f85;
   }
 </style>

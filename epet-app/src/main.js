@@ -5,10 +5,12 @@ import App from './App'
 import router from './router'
 import store from './store/store'
 import  './mock/Mockjs'
+import VueScroller from 'vue-scroller'
+
 Vue.config.productionTip = false
 
 import { Swipe, SwipeItem } from 'mint-ui';
-
+Vue.use(VueScroller)
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 

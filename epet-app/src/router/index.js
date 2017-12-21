@@ -26,6 +26,10 @@ export default new Router({
       component: classification,
       children:[
         {
+          path: '/',
+          'redirect':'/classification/goods'
+        },
+        {
           path: '/classification/goods',
           component: goods,
         },

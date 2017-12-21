@@ -1,19 +1,19 @@
 <template>
   <div>
       <router-view></router-view>
-    <div class="footer">
+    <div class="footer" v-if="isShow">
       <ul class="clearfix">
-        <li @click="changeColor">
-          <router-link to="/app"><span class="shouye"></span></router-link>
+        <li>
+          <router-link to="/app" class="shouye"></router-link>
         </li>
-        <li @click="changeColor">
-          <router-link to="/classification" @click="changeColor"><span class="fenlei"></span></router-link>
+        <li>
+          <router-link to="/classification" class="fenlei"></router-link>
         </li>
-        <li @click="changeColor">
-          <router-link to="/shoppingcart" @click="changeColor"><span class="shop"></span></router-link>
+        <li>
+          <router-link to="/shoppingcart" class="shop" ></router-link>
         </li>
-        <li @click="changeColor">
-          <router-link to="/mine" @click="changeColor"><span class="my"></span></router-link>
+        <li>
+          <router-link to="/mine" class="my"></router-link>
         </li>
       </ul>
     </div>
@@ -23,21 +23,14 @@
 export default {
   data　(){
     return{
-      x:0
+      isShow:true
     }
   },
   mounted(){
     this.$store.dispatch('getHome')
+    this.$store.dispatch('getBrands')
   },
   methods:{
-    changeColor (ev) {
-      ev=ev||event
-      var spanNodes=document.querySelectorAll('.footer>ul>li>a>span')
-      for (var i=0;i<spanNodes.length;i++){
-        spanNodes[i].style.backgroundPositionX='-85px'
-      }
-      ev.target.style.backgroundPositionX='0'
-    }
   },
   components:{
   }
@@ -46,6 +39,7 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+
   .footer
     position fixed
     bottom 0
@@ -55,6 +49,7 @@ export default {
     background-color white
     z-index 12
     border-top: 1px solid #e7e7e7;
+    display block
     ul
       display flex
       li
@@ -65,15 +60,13 @@ export default {
         a
           display inline-block
           text-align center
-          span
-            display inline-block;
-            margin-top: 2px;
-            width 42px
-            height 40px
-            background url("./common/img/img.png") no-repeat
-            background-size 560%
+          margin-top: 2px;
+          width 42px
+          height 40px
+          background url("./common/img/img.png") no-repeat
+          background-size 560%
         .shouye
-          background-position-x 0
+          background-position-x -85px
           background-position-y 0
         .fenlei
           background-position -85px -41px
@@ -81,6 +74,10 @@ export default {
           background-position -85px -81px
         .my
           background-position -85px -122px
+        .router-link-exact-active
+          background-position-x -42px
+        .active
+          background-position-x -42px
 
 
 

@@ -2,7 +2,7 @@
     <div class="loagin">
       <div class="header">
         <div class="header-top">
-          <span class="arrow"></span>
+          <span class="arrow" @click="goblack"></span>
           <span class="register">注册</span>
         </div>
         <div class="mlogin">
@@ -39,19 +39,19 @@
             <ul>
               <li class="clearfix">
                 <span class="numico"></span>
-                <input type="text" placeholder="已注册的手机号" name="phone">
+                <input type="text" placeholder="已注册的手机号" name="phone" v-model="phone">
               </li>
               <li>
                 <span class="passwordico"></span>
                 <input type="text" placeholder="请输入图片内容" name="varify">
                 <span class="fr seccode" >
-                  <img src="../common/img/seccode.png">
+                  <img src="http://demo.open.renren.io/renren-fast/captcha.jpg">
                 </span>
               </li>
               <li>
                 <span class="passwordico"></span>
-                <input type="text" class="dttext" placeholder="动态密码">
-                <a class="get_phonepass ">获取动态密码</a>
+                <input type="text" class="dttext" placeholder="动态密码" v-model="code">
+                <a class="get_phonepass" @click="sendCode">获取动态密码</a>
               </li>
             </ul>
           </div>
@@ -61,7 +61,8 @@
           <div class="clear"></div>
         </div>
         <div class="loginbtn">
-          <a href="#">登  录</a>
+          <a href="#" @click="login">登  录</a>
+          <p>登陆状态: {{status}}</p>
         </div>
         <div class="space"></div>
         <div class="partners">
@@ -83,19 +84,45 @@
     </div>
 </template>
 <script>
+  import axios from 'axios'
   export default{
     data () {
       return{
         isShowI1: true,
-        isShowI2:false
+        isShowI2:false,
+        phone: '',
+        code: '',
+        status: '未登陆'
       }
     },
 
     methods:{
+      goblack(){
+        this.$router.back()
+      },
       showI(){
           this.isShowI2 =!this.isShowI2
           this.isShowI1 =!this.isShowI1
       },
+      sendCode() {
+        const url = `codeapi/sendcode?phone=${this.phone}`
+        axios.get(url).then(response => {
+          console.log('sendcode result ', response.data)
+        })
+      },
+
+      login() {
+        axios.post('codeapi/login', {phone: this.phone, code: this.code}).then(response => {
+          console.log('login result ', response.data)
+          const result = response.data
+          if (result.code == 0) {
+            const user = result.data
+            this.status = `登陆成功: ${user.phone}`
+          } else {
+            this.status = `登陆失败, 请输入正确的手机号和验证码`
+          }
+        })
+      }
 
     },
     mounted(){
@@ -185,6 +212,7 @@
             border-bottom: #e2e2e2 solid 1px;
             padding: 12px 0 12px 30px;
             position: relative;
+            background-color white
             span
               float: left;
               display: inline;
@@ -218,6 +246,8 @@
             border-bottom: #e2e2e2 solid 1px;
             padding: 12px 0 12px 30px;
             position: relative;
+            img
+              width 100px
             .get_phonepass
               background: #fff;
               color: #ff4259;

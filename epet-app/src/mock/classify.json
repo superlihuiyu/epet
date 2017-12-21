@@ -11,59 +11,671 @@
     "categorys": [
       {
         "cateid": 88888,
-        "name": "为您推荐"
+        "name": "为您推荐",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"强化免疫"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/12/10/f38b8a4245c34c33061d04ad1e8009dd.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2016-08/20/14/8095e54e9414a06705acb7471eac7629.jpg@!300w-b",
+            "efficacy":"肠胃调理"
+          }
+        ],
+        "brandList":[]
       },
       {
         "cateid": "721",
-        "name": "猫咪主粮"
+        "name": "猫咪主粮",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"强化免疫"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2013-06/28/c72319096507029d8d145c6b18aabda2.jpg",
+            "brandname":"天衡宝（原雪山）"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "3580",
-        "name": "猫咪零食"
+        "name": "猫咪零食",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/26/10/2eeb97d6268f555de24ec370fd0de2ad.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dca58009b64dba66a1025358ced2df9a.jpg",
+            "brandname":"纽萃宝NUTRIPE"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "936",
-        "name": "猫咪日用"
+        "name": "猫咪日用",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-10/12/10/945dac5c88fbfedba2ae6fdd68dee287.jpg@!300w-b",
+            "efficacy":"爆款推荐"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-09/22/8/c0dab99c5239d783320175df8998554a.jpg",
+            "brandname":"Opawz"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "958",
-        "name": "猫咪玩具"
+        "name": "猫咪玩具",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-10/11/16/1a484a5f3e74f5028cefaff0cfad6725.jpg@!300w-b",
+            "efficacy":"小型犬专区"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/1092d2c62e93afc60e6924c71cf8d8a9.jpg",
+            "brandname":"悠润"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "3627",
-        "name": "猫咪保健"
+        "name": "猫咪保健",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/b686acdc3b8a6e0e635fac80f1311214.jpg@!300w-b",
+            "efficacy":"猫猫餐具"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3bcaa993b37c1c47cb6be9522fc330c4.jpg",
+            "brandname":"可悠"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "3620",
-        "name": "猫咪医疗"
+        "name": "猫咪医疗",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/1078c799ae6f02bf4255fd0919b813e9.jpg@!300w-b",
+            "efficacy":"狗狗训练"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2015-08/12/10/2057ac67a9bb550b2a88d5d3fd0baff2.jpg",
+            "brandname":"Pioneer Pet"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4196",
-        "name": "猫咪出行"
+        "name": "猫咪出行",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/fcab37ead00d77bcdddf7dabe6c817d7.jpg@!300w-b",
+            "efficacy":"神秘玩具"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/19/10/001bc93001b123d3abf7c37e435ba19b.jpg",
+            "brandname":"petsafe Pet"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4198",
-        "name": "猫咪装扮"
+        "name": "猫咪装扮",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/fcab37ead00d77bcdddf7dabe6c817d7.jpg@!300w-b",
+            "efficacy":"神秘玩具"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/19/10/001bc93001b123d3abf7c37e435ba19b.jpg",
+            "brandname":"petsafe Pet"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4204",
-        "name": "猫咪美容"
+        "name": "猫咪美容",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/df1ed7120376370a4b5badaae61a0a7e.jpg@!300w-b",
+            "efficacy":"熟料玩具"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/2016-08/18/18/f02f4ec6603b8ac8ee8e79e4a4fd6c8b.jpg",
+            "brandname":"petsafe Pet"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4209",
-        "name": "猫咪香波"
+        "name": "猫咪香波",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/e9145de044fd5cec4c9b8ed47360d98f.jpg@!300w-b",
+            "efficacy":"木制玩具"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/8b8aef29422b8a74ebe095517451ed51.jpg",
+            "brandname":"不知道审什么牌子"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4215",
-        "name": "猫咪周边"
+        "name": "猫咪周边",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/6709410560b999ab37ffb9747bb2ee71.jpg@!300w-b",
+            "efficacy":"手工玩具"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/8b8aef29422b8a74ebe095517451ed51.jpg",
+            "brandname":"啊啊啊啊啊"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4216",
-        "name": "猫咪定制"
+        "name": "猫咪定制",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2016-07/23/14/c52111e9c4150f10ef7c5f9a1806fc93.jpg@!300w-b",
+            "efficacy":"块完了"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/8b8aef29422b8a74ebe095517451ed51.jpg",
+            "brandname":"啊啊啊啊啊"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       },
       {
         "cateid": "4225",
-        "name": "猫猫书籍"
+        "name": "猫猫书籍",
+        "goodList":[
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2016-07/23/14/c52111e9c4150f10ef7c5f9a1806fc93.jpg@!300w-b",
+            "efficacy":"块完了"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-05/04/16/fd206e6489657294e9067d349ea297f1.jpg@!300w-b",
+            "efficacy":"磨牙洁齿"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/d35af0c7d00d62dc18165cdce3a9b8e1.jpg@!300w-b",
+            "efficacy":"国产狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/cates/2014-03/24/3512594b71a2efd14b5c5925848d2e5a.jpg@!300w-b",
+            "efficacy":"进口狗粮"
+          },
+          {
+            "goodsSrc":"https://img2.epetbar.com/nowater/2017-09/01/16/4e3455a75bc8d75be71816e51b917103.jpg@!300w-b",
+            "efficacy":"体内驱虫"
+          }
+        ],
+        "brandList":[
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/7f05c5e0fb15da2f14748c19d23a7334.jpg",
+            "brandname":"好了"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg",
+            "brandname":"ZIWI Peak"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg",
+            "brandname":"比瑞吉"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"牛油果AVODerm"
+          },
+          {
+            "brandSrc":"https://img2.epetbar.com/nowater/brand_logo/2012-12/06/b13de5404822dec7fec61a1fc4ba29c6.jpg",
+            "brandname":"枫树大道Maples"
+          }
+
+        ]
       }
     ],
     "brand": [

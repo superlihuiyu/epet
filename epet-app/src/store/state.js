@@ -1,4 +1,5 @@
 export default {
   classify:{},
-  home:{}
+  home:{},
+  brands:[]
 }

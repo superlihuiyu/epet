@@ -1,6 +1,7 @@
 <template>
-  <div class="nav-brand" ref="list">
-    <ul class="brand-name">
+  <div class="nav-brand" >
+    <scroller>
+      <ul class="brand-name">
       <li class="brand-name-list" v-for="(brand,index1) in classify.brand" :key="index1">
         <p class="list-name">—— {{brand.title}} ——</p>
         <ul class="brand-img">
@@ -14,27 +15,40 @@
         </ul>
       </li>
     </ul>
-    <div class="brand-all">全部</div>
+    </scroller>
+    <div class="brand-all" @click.stop="maskShow">全部</div>
+    <sortBrands :maskisShow="maskisShow"/>
   </div>
 </template>
 
 <script>
+  import sortBrands from './sortBrands.vue'
   import BScroll from 'better-scroll'
   import {mapState} from 'vuex'
   export default {
     data() {
-      return {}
+      return {
+        maskisShow:false,
+      }
     },
-
     computed: {
       ...mapState(['classify'])
     },
-
-    methods: {},
     mounted(){
-      new BScroll(this.$refs.list, {
-        scrollY: true
-      })
+
+    },
+    methods: {
+      maskShow(){
+        this.maskisShow=true
+        var footerNodes=document.querySelector('.footer')
+        footerNodes.style.display='none'
+      }
+    },
+    mounted(){
+
+    },
+    components:{
+      sortBrands
     }
   }
 </script>
@@ -43,6 +57,7 @@
   @import "../../common/stylus/mixin.styl"
   .nav-brand
     clearFix()
+    position relative
     width 100%
     height 597px
     background #f3f4f5
@@ -107,6 +122,7 @@
       line-height 40px
       text-align center
       color #fff
+
 
 
 </style>

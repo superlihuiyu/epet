@@ -1,7 +1,7 @@
 <template>
-  <div class="indexbox">
+  <div class="indexbox" v-if="home.datas">
     <header_com :menus="home.menus"/>
-    <div class="main">
+    <div class="main" v-if="home.datas[0]">
       <banner_com :imgSrc="home.datas[0].value"/>
       <div class="columnnavdiv clearfix">
         <ul class="sale-list clearfix ">
@@ -33,9 +33,9 @@
             </a>
           </div>
         </div>
-        <div class="surprise-pro">
-          <div class="swiper-container" style="width: 100%" ref="goodsWrapper">
-            <div class="swiper-wrapper clearfix" style="width: 120%" >
+        <div class="surprise-pro" style="width: 100%" ref="goodsWrapper">
+          <div class="swiper-container" style="width: 120%" >
+            <div class="swiper-wrapper clearfix"  >
               <div class="swiper-slide " style="width: 98.5714px; margin-right: 10px;">
                 <div class="pro-block"><a href="https://wap.epet.com/surprise/Main.html?pet_type=dog&amp;fw=0">
                   <div class="thispro-img loadimg-nofixed">
@@ -160,7 +160,6 @@
   import BScroll from 'better-scroll'
   import {mapState} from 'vuex'
   export default{
-
     mounted(){
       this.$nextTick(()=>{
         new BScroll(this.$refs.goodsWrapper,{
@@ -168,6 +167,7 @@
           click:true
         })
       })
+
     },
     computed: {
       ...mapState(['home'])
@@ -193,7 +193,6 @@
       padding-top 25%
       padding-bottom 40px
       .columnnavdiv
-
         .sale-list
           margin 0 auto;
           li
